@@ -3,7 +3,7 @@
 
 #include <queue>
 //#include <heap.h>
-#include "myHeap.full.h"  // This is my version of HW 2.  You can include your own binary heap
+#include "myHeap.full.h"  
 #include <math.h>
 
 
@@ -29,8 +29,7 @@ typedef struct node{
 
 void BellmanFord(nodeitem N[], int Or, int Nm)
 {
-   // You program this, a  Bellman Ford algorithm that uses a work queue.  DO NOT implement this as 3 for loops. 
-   // That can be very slow, and waste many iterations. 
+   // You program this, a  Bellman Ford algorithm that uses a work queue.
     bool inQueue[Nm + 1] = { false };
     struct arc *edge;
 
